@@ -20,8 +20,6 @@ namespace TechJobsOO
             Value = value;
         }
 
-        // TODO: Add custom Equals(), GetHashCode(), and ToString() methods.
-
         public override string ToString()
         {
             return $"{this.Value}";
