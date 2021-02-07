@@ -3,33 +3,33 @@ namespace TechJobsOO
 {
     public class CoreCompetency
     {
-        private int id;
-        private string value;
+        private int Id;
+        public string Value;
 
         public CoreCompetency()
         {
-            id = id++;
+            Id = Id++;
         }
 
-        public CoreCompetency(string v) : this()
+        public CoreCompetency(string value) : this()
         {
-            value = v;
+            Value = value;
         }
 
         public override bool Equals(object obj)
         {
             return obj is CoreCompetency competency &&
-                   id == competency.id;
+                   Id == competency.Id;
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(id);
+            return HashCode.Combine(Id);
         }
 
         public override string ToString()
         {
-            return value;
+            return Value;
         }
     }
 }

@@ -22,7 +22,7 @@ namespace TechJobsOO
 
         public override string ToString()
         {
-            return $"{this.Value}";
+            return Value;
         }
 
         public override bool Equals(object obj)

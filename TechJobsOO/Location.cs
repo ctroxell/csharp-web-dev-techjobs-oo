@@ -4,13 +4,11 @@ namespace TechJobsOO
     public class Location
     {
         public int Id { get; }
-        private static int nextId = 1;
         public string Value { get; set; }
 
         public Location()
         {
-            Id = nextId;
-            nextId++;
+            Id = Id++;
         }
 
         public Location(string value) : this()

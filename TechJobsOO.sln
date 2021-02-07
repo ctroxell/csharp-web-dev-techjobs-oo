@@ -1,7 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechJobsOO", "TechJobsOO\TechJobsOO.csproj", "{C76D48E1-4C5C-4DB4-89A2-DBACCF4CBE4F}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechJobsOO", "TechJobsOO\TechJobsOO.csproj", "{C76D48E1-4C5C-4DB4-89A2-DBACCF4CBE4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechJobsTests", "TechJobsOOTechJobsTests\TechJobsTests.csproj", "{B6A1DEB4-B0AE-4CDC-A1D5-D3AEB3DD70BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +16,15 @@ Global
 		{C76D48E1-4C5C-4DB4-89A2-DBACCF4CBE4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C76D48E1-4C5C-4DB4-89A2-DBACCF4CBE4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C76D48E1-4C5C-4DB4-89A2-DBACCF4CBE4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A1DEB4-B0AE-4CDC-A1D5-D3AEB3DD70BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A1DEB4-B0AE-4CDC-A1D5-D3AEB3DD70BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A1DEB4-B0AE-4CDC-A1D5-D3AEB3DD70BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A1DEB4-B0AE-4CDC-A1D5-D3AEB3DD70BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A075ED6-04F1-4728-9E2E-5E626BE94A93}
 	EndGlobalSection
 EndGlobal

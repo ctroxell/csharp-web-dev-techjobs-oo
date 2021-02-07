@@ -38,6 +38,46 @@ namespace TechJobsOO
         {
             return HashCode.Combine(Id);
         }
-        
+
+        public override string ToString()
+        {
+                    
+            string idString = "ID: " + Id;
+            string nameString = "\nName: " + Name;
+            string employerString = "\nEmployer: " + EmployerName.Value;
+            string locationString = "\nLocation: " + EmployerLocation.Value;
+            string positionString = "\nPosition Type: " + JobType.Value;
+            string coreString = "\nCore Competency: " + JobCoreCompetency.Value;
+
+            if(idString.Length == 4)
+            {
+                idString = "ID: Data not available";
+            }
+            if (nameString.Length == 7)
+            {
+                nameString = "\nName: Data not available";
+            }
+            if (employerString.Length == 11)
+            {
+                employerString = "\nEmployer: Data not available";
+            }
+            if (locationString.Length == 11)
+            {
+                locationString = "\nLocation: Data not available";
+            }
+            if (positionString.Length == 16)
+            {
+                positionString = "\nPosition Type: Data not available";
+            }
+            if (coreString.Length == 18)
+            {
+                coreString = "\nCore Competency: Data not available";
+            }
+
+            string fullJobString = idString + nameString + employerString + locationString + positionString + coreString;
+
+            return fullJobString;
+        }
+
     }
 }
