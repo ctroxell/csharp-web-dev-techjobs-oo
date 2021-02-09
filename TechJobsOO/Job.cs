@@ -4,8 +4,7 @@ namespace TechJobsOO
     public class Job
     {
         public int Id { get; }
-        private static int nextId = 1;
-
+        static int NextId = 1;
         public string Name { get; set; }
         public Employer EmployerName { get; set; }
         public Location EmployerLocation { get; set; }
@@ -15,8 +14,8 @@ namespace TechJobsOO
         
         public Job()
         {
-            Id = nextId;
-            nextId++;
+            Id = NextId;
+            NextId++;
         }
 
         public Job(string name, Employer employerName, Location employerLocation, PositionType jobType, CoreCompetency jobCoreCompetency) : this()

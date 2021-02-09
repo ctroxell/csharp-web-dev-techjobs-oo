@@ -5,27 +5,25 @@ using TechJobsOO;
 
 namespace TechJobsOO
 {
-    class JobFields
+    public abstract class JobFields
     {
-        public string Name { get; set; }
-        public int Id { get; set }
-        public Employer EmployerName { get; set; }
-        public Location EmployerLocation { get; set; }
-        public PositionType JobType { get; set; }
-        public CoreCompetency JobCoreCompetency { get; set; }
-
-        public JobFields(string name, Employer employerName, Location employerLocation, PositionType jobType, CoreCompetency jobCoreCompetency)
-        {
-            Name = name;
-            EmployerLocation = employerLocation;
-            JobType = jobType;
-            JobCoreCompetency = jobCoreCompetency;
-            Id = 1;
-        }
-
+        public int Id { get; set; }
+        public static int nextId = 1;
+        public string Value { get; set; }
+        
         public JobFields()
         {
-            Id = Id++;
+            Id = nextId;
+            nextId++;
+        }
+        public JobFields(string value) : this()
+        {
+           Value = value;
+        }
+
+        public override string ToString()
+        {
+            return Value;
         }
 
         public override int GetHashCode()
@@ -35,8 +33,8 @@ namespace TechJobsOO
 
         public override bool Equals(object obj)
         {
-            return obj is Job job &&
-                   Id == job.Id;
+            return obj is JobFields field &&
+                   Id == field.Id;
         }
     }
 }
